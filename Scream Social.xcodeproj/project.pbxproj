@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13F2B8D69DD59FB45E5371F8 /* Pods_Scream_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3824FFA5F8EDF5DD5554A0 /* Pods_Scream_Social.framework */; };
 		73E609C51E5B635E006378EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E609C41E5B635E006378EC /* AppDelegate.swift */; };
-		73E609C71E5B635E006378EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E609C61E5B635E006378EC /* ViewController.swift */; };
+		73E609C71E5B635E006378EC /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E609C61E5B635E006378EC /* SignInVC.swift */; };
 		73E609CA1E5B635E006378EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E609C81E5B635E006378EC /* Main.storyboard */; };
 		73E609CC1E5B635E006378EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E609CB1E5B635E006378EC /* Assets.xcassets */; };
 		73E609CF1E5B635E006378EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E609CD1E5B635E006378EC /* LaunchScreen.storyboard */; };
+		73E609D71E5B63A8006378EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73E609D61E5B63A8006378EC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C6951E64F0B8CCBE1753016 /* Pods-Scream Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scream Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scream Social/Pods-Scream Social.release.xcconfig"; sourceTree = "<group>"; };
+		6B3824FFA5F8EDF5DD5554A0 /* Pods_Scream_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scream_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E609C11E5B635E006378EC /* Scream Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scream Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E609C41E5B635E006378EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73E609C61E5B635E006378EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73E609C61E5B635E006378EC /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		73E609C91E5B635E006378EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73E609CB1E5B635E006378EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73E609CE1E5B635E006378EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73E609D01E5B635E006378EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73E609D61E5B63A8006378EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2507DA11C2D76B44F9F0346 /* Pods-Scream Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scream Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scream Social/Pods-Scream Social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F2B8D69DD59FB45E5371F8 /* Pods_Scream_Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18B2A6E64BE9E485CAEFF97E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2507DA11C2D76B44F9F0346 /* Pods-Scream Social.debug.xcconfig */,
+				4C6951E64F0B8CCBE1753016 /* Pods-Scream Social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		73A3C3211E5B65BF00AC5068 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		73A3C3221E5B65C500AC5068 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		73A3C3231E5B65C800AC5068 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73E609C61E5B635E006378EC /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		73E609B81E5B635E006378EC = {
 			isa = PBXGroup;
 			children = (
 				73E609C31E5B635E006378EC /* Scream Social */,
 				73E609C21E5B635E006378EC /* Products */,
+				18B2A6E64BE9E485CAEFF97E /* Pods */,
+				D4F5C0F87CD8BE42900561AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +94,25 @@
 		73E609C31E5B635E006378EC /* Scream Social */ = {
 			isa = PBXGroup;
 			children = (
+				73A3C3211E5B65BF00AC5068 /* Model */,
+				73A3C3231E5B65C800AC5068 /* Controller */,
+				73A3C3221E5B65C500AC5068 /* View */,
 				73E609C41E5B635E006378EC /* AppDelegate.swift */,
-				73E609C61E5B635E006378EC /* ViewController.swift */,
 				73E609C81E5B635E006378EC /* Main.storyboard */,
 				73E609CB1E5B635E006378EC /* Assets.xcassets */,
 				73E609CD1E5B635E006378EC /* LaunchScreen.storyboard */,
 				73E609D01E5B635E006378EC /* Info.plist */,
+				73E609D61E5B63A8006378EC /* GoogleService-Info.plist */,
 			);
 			path = "Scream Social";
+			sourceTree = "<group>";
+		};
+		D4F5C0F87CD8BE42900561AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B3824FFA5F8EDF5DD5554A0 /* Pods_Scream_Social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73E609D31E5B635E006378EC /* Build configuration list for PBXNativeTarget "Scream Social" */;
 			buildPhases = (
+				94D7FE5B409D34990839CE36 /* [CP] Check Pods Manifest.lock */,
 				73E609BD1E5B635E006378EC /* Sources */,
 				73E609BE1E5B635E006378EC /* Frameworks */,
 				73E609BF1E5B635E006378EC /* Resources */,
+				06EF425252B4BDCDF47A372B /* [CP] Embed Pods Frameworks */,
+				86A29351CD11DD85E2764917 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E609CF1E5B635E006378EC /* LaunchScreen.storyboard in Resources */,
+				73E609D71E5B63A8006378EC /* GoogleService-Info.plist in Resources */,
 				73E609CC1E5B635E006378EC /* Assets.xcassets in Resources */,
 				73E609CA1E5B635E006378EC /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06EF425252B4BDCDF47A372B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scream Social/Pods-Scream Social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86A29351CD11DD85E2764917 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scream Social/Pods-Scream Social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94D7FE5B409D34990839CE36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73E609BD1E5B635E006378EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E609C71E5B635E006378EC /* ViewController.swift in Sources */,
+				73E609C71E5B635E006378EC /* SignInVC.swift in Sources */,
 				73E609C51E5B635E006378EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +362,7 @@
 		};
 		73E609D41E5B635E006378EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2507DA11C2D76B44F9F0346 /* Pods-Scream Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79N25RX82N;
@@ -272,6 +376,7 @@
 		};
 		73E609D51E5B635E006378EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C6951E64F0B8CCBE1753016 /* Pods-Scream Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79N25RX82N;
@@ -302,6 +407,7 @@
 				73E609D51E5B635E006378EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

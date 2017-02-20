@@ -1,0 +1,6 @@
+framework module Pods_Scream_Social {
+  umbrella header "Pods-Scream Social-umbrella.h"
+
+  export *
+  module * { export * }
+}
